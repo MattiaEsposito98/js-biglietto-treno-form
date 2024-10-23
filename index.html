@@ -16,73 +16,74 @@
 </style>
 
 <body>
- 
-    <section class="container">
-      <h1 class="text-center mt-5 mb-5"> Calcola il prezzo del tuo biglietto</h1>
-      <div class="mt-4 bg-light ">
-        <form class="row">
 
-          <div class="col-4">
-            <label for="inputName" class="form-label fw-bold">Nome Cognome</label>
-            <input type="text" class="form-control" id="inputName" value=''>
+  <section class="container">
+    <h1 class="text-center mt-5 mb-5"> Calcola il prezzo del tuo biglietto</h1>
+    <div class="mt-4 bg-light ">
+      <form action="" method="get" id="form-element" class="row">
+
+        <div class="col-4">
+          <label for="inputName" class="form-label fw-bold">Nome Cognome</label>
+          <input type="text" class="form-control" id="inputName" value=''>
+        </div>
+
+        <div class="col-4">
+          <label for="inputKm" class="form-label fw-bold">Km da percorrere</label>
+          <input type="text" class="form-control" id="inputKm" value=''>
+        </div>
+
+        <div class="col-4">
+          <label for="inputSconto" class="form-label fw-bold"> Fascia d'età</label>
+          <select id="inputSconto" class="form-select" value=''>
+            <option selected>Scegli...</option>
+            <option value="Maggiorenne"> Maggiorenne</option>
+            <option value="Over65"> Over 65</option>
+            <option value="Minorenne"> Minorenne</option>
+          </select>
+        </div>
+        <div class="col-12 d-flex justify-content-evenly mt-4">
+          <button class="btn btn-primary" type="submit">Genera</button>
+          <button class="btn btn-primary" id="reset">Annulla</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <section>
+    <h1 class="text-center my-5">Il tuo biglietto</h1>
+    <div class="container border bg-light">
+      <div class="row">
+        <h3 class="text-center mb-5"> DETTAGLIO PASSEGERI </h3>
+
+        <div class="col-4">
+          <h5 class="text-center">NOME PASSEGGERO</h5>
+          <h4 class="text-center" id="nome-passegero"></h4>
+
+        </div>
+        <div class="col-8">
+          <div>
+            <ul class="d-flex justify-content-between">
+              <li class="fw-bold text-center">Offerta
+                <h6 class="text-center" id="offerta"> </h6>
+              </li>
+
+              <li class="fw-bold">Carozza
+                <p class="text-center" id="carozza"> </p>
+              </li>
+              <li class="fw-bold">Codice CP
+                <p class="text-center" id="codiceCP"> </p>
+              </li>
+              <li class="fw-bold">Costo Biglietto
+                <p class="text-center" id="costoBiglietto"> </p>
+              </li>
+            </ul>
           </div>
 
-          <div class="col-4">
-            <label for="inputKm" class="form-label fw-bold">Km da percorrere</label>
-            <input type="text" class="form-control" id="inputKm" value=''>
-          </div>
-
-          <div class="col-4">
-            <label for="inputSconto" class="form-label fw-bold"> Fascia d'età</label>
-            <select id="inputSconto" class="form-select" value=''>
-              <option selected>Scegli...</option>
-              <option value="Maggiorenne"> Maggiorenne</option>
-              <option value="Over65"> Over 65</option>
-              <option value="Minorenne"> Minorenne</option>
-            </select>
-          </div>
-          <div class="col-12 d-flex justify-content-evenly mt-4">
-            <button class="btn btn-primary" type="submit">Genera</button>
-            <button class="btn btn-primary" id="reset">Annulla</button>
-          </div>
-        </form>
+        </div>
       </div>
-    </section>
-
-
-    <section>
-      <h1 class="text-center my-5">Il tuo biglietto</h1>
-      <div class="container border bg-light">
-        <div class="row">
-          <h3 class="text-center mb-5"> DETTAGLIO PASSEGERI </h3>
-
-          <div class="col-4">
-            <h5 class="text-center">NOME PASSEGGERO</h5>
-            <h4 class="text-center" id="nome-passegero"></h4>
-
-          </div>
-          <div class="col-8">
-            <div>
-              <ul class="d-flex justify-content-between">
-                <li class="fw-bold text-center">Offerta
-                  <h6 class="text-center" id="offerta"> </h6>
-                </li>
-
-                <li class="fw-bold">Carozza
-                  <p class="text-center" id="carozza"> </p>
-                </li>
-                <li class="fw-bold">Codice CP
-                  <p class="text-center" id="codiceCP"> </p>
-                </li>
-                <li class="fw-bold">Costo Biglietto
-                  <p class="text-center" id="costoBiglietto"> </p>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-
-    </section>
+    </div>
+  </section>
 
 
 

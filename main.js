@@ -1,7 +1,10 @@
 console.log("Biglietto del treno")
 
+const formElement = document.getElementById('form-element');
 const btnGenera = document.querySelector('button')
-btnGenera.addEventListener("click", function () {
+formElement.addEventListener('submit', function (event) {
+
+  event.preventDefault();
 
   // nome utente
   let nameUser = document.getElementById("inputName").value
@@ -49,21 +52,28 @@ btnGenera.addEventListener("click", function () {
   document.getElementById('carozza').innerHTML = numCarozza
   document.getElementById('codiceCP').innerHTML = numCP
   document.getElementById('costoBiglietto').innerHTML = prezzo_finale.toFixed(2)
+
+
+})
+
+btnGenera.addEventListener('click', function () {
 })
 
 const btnReset = document.getElementById("reset")
 btnReset.addEventListener("click", function () {
   // Reset per il form
-  document.getElementById("inputName").value = ''
-  document.getElementById("inputKm").value = ''
-  document.getElementById("inputSconto").value = ''
+  // document.getElementById("inputName").value = ''
+  // document.getElementById("inputKm").value = ''
+  // document.getElementById("inputSconto").value = ''
 
-  //Reset per il biglietto
-  document.getElementById('nome-passegero').innerHTML = ''
-  document.getElementById('offerta').innerHTML = ''
-  document.getElementById('carozza').innerHTML = ''
-  document.getElementById('codiceCP').innerHTML = ''
-  document.getElementById('costoBiglietto').innerHTML = ''
+  // Reset per il biglietto
+  // document.getElementById('nome-passegero').innerHTML = ''
+  // document.getElementById('offerta').innerHTML = ''
+  // document.getElementById('carozza').innerHTML = ''
+  // document.getElementById('codiceCP').innerHTML = ''
+  // document.getElementById('costoBiglietto').innerHTML = ''
+
+  location.reload()
 })
 
 
