@@ -18,12 +18,12 @@ btnGenera.addEventListener("click", function () {
   const prezzo_al_km = 0.21
 
   //condizione 
-  if (ageUser === "minorenne") {
+  if (ageUser === "Minorenne") {
     const prezzo_scontato20 = (kmUser * prezzo_al_km) * 20 / 100
     var prezzo_finale = (kmUser * prezzo_al_km) - prezzo_scontato20
     console.log(`Il prezzo totale con lo sconto del 20% è: ${prezzo_finale.toFixed(2)}€`)
 
-  } else if (ageUser === "over65") {
+  } else if (ageUser === "Over65") {
     const prezzo_scontato40 = (kmUser * prezzo_al_km) * 40 / 100
     var prezzo_finale = (kmUser * prezzo_al_km) - prezzo_scontato40
     console.log(`Il prezzo totale con lo sconto del 40% è: ${prezzo_finale.toFixed(2)}€`)
