@@ -22,27 +22,27 @@
       <form class="row g-3">
 
         <div class="col-md-4">
-          <label for="inputCity" class="form-label fw-bold">Nome Cognome</label>
-          <input type="text" class="form-control" id="inputCity">
+          <label for="inputName" class="form-label fw-bold">Nome Cognome</label>
+          <input type="text" class="form-control" id="inputName" value =''>
         </div>
 
         <div class="col-md-4">
-          <label for="inputZip" class="form-label fw-bold">Km da percorrere</label>
-          <input type="text" class="form-control" id="inputZip">
+          <label for="inputKm" class="form-label fw-bold">Km da percorrere</label>
+          <input type="text" class="form-control" id="inputKm" value =''>
         </div>
 
         <div class="col-md-4">
-          <label for="inputState" class="form-label fw-bold"> Fascia d'età</label>
-          <select id="inputState" class="form-select">
+          <label for="inputSconto" class="form-label fw-bold"> Fascia d'età</label>
+          <select id="inputSconto" class="form-select" value =''>
             <option selected>Scegli...</option>
-            <option>Maggiorenne</option>
-            <option>Over 65</option>
-            <option>Minorenne</option>
+            <option value = "maggiorenne"> Maggiorenne</option>
+            <option value = "over65"> Over 65</option>
+            <option value = "minorenne"> Minorenne</option>
           </select>
         </div>
         <div class="col-12 d-flex justify-content-evenly mt-4">
-          <button type="submit" class="btn btn-primary">Genera</button>
-          <button type="button" class="btn btn-primary">Annulla</button>
+          <button class="btn btn-primary">Genera</button>
+          <button class="btn btn-primary">Annulla</button>
         </div>
       </form>
     </div>
@@ -56,15 +56,25 @@
         <h3> DETTAGLIO PASSEGERI </h3>
         <div class="col-4 bg-secondary">
           <h5>NOME PASSEGGERO</h5>
+          <h4 id="nome-passegero"></h4>
 
         </div>
         <div class="col-8">
           <div>
             <ul class="d-flex justify-content-between">
-              <li class="fw-bold">Offerta</li>
-              <li class="fw-bold">Carroza</li>
-              <li class="fw-bold">Codice CP</li>
-              <li class="fw-bold">Costo Biglietto</li>
+              <li class="fw-bold">Offerta
+                <p id="Offerta"> </p>
+              </li>
+
+              <li class="fw-bold">Carroza
+                <p id="Carozza"> </p>
+              </li>
+              <li class="fw-bold">Codice CP
+                <p id="Codice"> </p>
+              </li>
+              <li class="fw-bold">Costo Biglietto
+                <p id="CostoBiglietto"> </p>
+              </li>
             </ul>
           </div>
 
