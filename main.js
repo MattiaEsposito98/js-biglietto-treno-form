@@ -46,6 +46,7 @@ formElement.addEventListener('submit', function (event) {
 
 
 
+
   // Biglietto
   document.getElementById('nome-passegero').innerHTML = nameUser
   document.getElementById('offerta').innerHTML = ageUser
@@ -56,24 +57,22 @@ formElement.addEventListener('submit', function (event) {
 
 })
 
-btnGenera.addEventListener('click', function () {
-})
 
 const btnReset = document.getElementById("reset")
 btnReset.addEventListener("click", function () {
   // Reset per il form
-  // document.getElementById("inputName").value = ''
-  // document.getElementById("inputKm").value = ''
-  // document.getElementById("inputSconto").value = ''
+  //document.getElementById("inputName").value = ''
+  //document.getElementById("inputKm").value = ''
+  //document.getElementById("inputSconto").value = ''
 
-  // Reset per il biglietto
+  //   // Reset per il biglietto
   // document.getElementById('nome-passegero').innerHTML = ''
   // document.getElementById('offerta').innerHTML = ''
   // document.getElementById('carozza').innerHTML = ''
   // document.getElementById('codiceCP').innerHTML = ''
   // document.getElementById('costoBiglietto').innerHTML = ''
 
-  location.reload()
+     location.reload()
 })
 
 
